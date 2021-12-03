@@ -1,0 +1,15 @@
+.nav-links{
+    font-size:.9rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+.elementor-grid-item:hover{
+    background: #dfc2ad0c;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-links .contact-btn{
+    text-decoration: none;
+}
