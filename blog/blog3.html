@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en"
+    class="freelancer uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40">
+
+<!-- Mirrored from unistudio.co/html/dannel/pages/freelancer-single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Nov 2021 06:40:00 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Sulejmanov</title>
+    <meta name="description" content="page description here">
+
+    <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font"
+        type="font/woff" crossorigin>
+    <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font"
+        type="font/woff" crossorigin>
+    <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font"
+        type="font/woff" crossorigin>
+    <link rel="preload" href="./assets/fonts/brand-icons/brand-icons.woff2" as="font"
+        type="font/woff2" crossorigin>
+    <link rel="preload" href="./cdn.jsdelivr.net/npm/swiper%406.5.0/swiper-bundle.min.css"
+        as="style">
+    <link rel="preload" href="./cdn.jsdelivr.net/npm/uikit%403.6.18/dist/css/uikit.min.css"
+        as="style">
+    <link rel="preload" href="./assets/css/theme/main.css" as="style">
+
+    <script src="./assets/js/app-head.js"></script>
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/swiper%406.5.0/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/uikit%403.6.18/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="./assets/css/theme/main.css">
+    <link rel="stylesheet" href="./assets/css/updates.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5JJP7FY91"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-B5JJP7FY91');
+    </script>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <!-- Header -->
+        <header class="uni-header uk-position-top">
+            <div class="uni-header-navbar uk-scrollnav-header"
+                data-uk-sticky="top: 120; animation: uk-animation-slide-top">
+                <div class="uk-container uk-container-large">
+                    <nav class="uk-navbar uk-navbar-container uk-navbar-transparent"
+                        data-uk-navbar="">
+                        <div class="uk-navbar-top">
+                            <div class="uk-navbar-left uk-flex-1">
+                                <a class="uk-logo uk-navbar-item uk-h4 uk-h3@s uk-margin-remove dark:uk-text-gray-10"
+                                    href="../index.html">Robert.S Blog</a>
+                                <a class="uk-logo uk-navbar-item uk-sticky-logo dark:uk-text-gray-10"
+                                    href="../index.html">Robert.S Blog</a>
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Article -->
+        <article class="uni-article uk-section-large uk-section-2xlarge@m uk-padding-3xlarge-top">
+
+            <div class="uk-container">
+
+                <header
+                    class="uk-flex-center uk-text-center uk-margin-large-bottom uk-margin-2xlarge-bottom@m"
+                    id="read_more">
+                    <div>
+                        <span class="uk-text-overline">programming</span>
+                        <h1
+                            class="uk-h2 uk-h1@s uk-heading-hero@m uk-width-3xlarge@m uk-margin-medium-top@m">
+                            Life Cycle of Angular Components : Methods, Different Types, and Interface
+                        </h1>
+                        <ul
+                            class="uk-subnav uk-subnav-dot uk-flex-center uk-text-muted uk-margin-medium-top@m">
+                            <li><span>by</span>&nbsp;<span>
+                                    Robert Sulejmanov</span></li>
+                            <li>21 january 2021</li>
+                        </ul>
+                    </div>
+                </header>
+
+                <img src="../wp-content/uploads/sites/32/2021/05/blog-big-3.png" alt="Post title"
+                    width="1920" height="1260">
+
+                <div class="uk-margin-xlarge-top uk-margin-2xlarge-top@m">
+                    <div class="uk-container uk-container-small">
+                        <p class="uk-text-xlarge@m">
+                           
+                            <br>Introduction
+                            <br>The client-side platform which allows the building of applications for both the web and the mobile
+                            <br>is angular. It was introduced in 2009 by Google. Initially, the platform supported Javascript and
+                            <br>HTML, which got replaced with Angular TypeScript and other scripting languages.
+                            <br>Many versions of Angular have been developed with AngularJS to Angular-7 and so on. Whatever version
+                            <br>be it, the angular is generally built up of components. Therefore, understanding the components is
+                            <br>important for getting a clear understanding of the processing of the components.
+                            <br>However, every component of the angular has a specific lifestyle where each stage of the angular
+                            <br>lifecycle goes through the steps of initialization to the steps of destruction.
+                            <br>The article will focus on the events of the lifecycle of the different components of angular.
+                            <br>Life Cycle Methods
+                            <br>The components within angular have a different life cycle and a definite number of stages through
+                            <br>which the process of initialization to destruction is carried out. The different stages of the
+                            <br>components are referred to as the ‘life cycle hook event’.
+                            <br>For controlling the components within angular, the developers can use the hook events at different
+                            <br>phases of the application. Eight types of lifecycle hook events are present which the developers can
+                            <br>use in any of the components of the angular. The function call corresponding to the specific
+                            <br>lifecycle event has to be added by the developer.
+                            <br>A constructor method must be present for every component as the components belong to a typescript
+                            <br>class. It is always the component class constructor that is executed first before the execution of
+                            <br>any of the angular lifecycle hooks. For adding any dependencies, the constructor can be used for the
+                            <br>required task. The angular lifecycle hooks are executed in a specific order.
+                            <br>Whenever there is an initialization of any component in angular, root components are created and
+                            <br>presented. The heir of the components is then produced.
+                            <br>The division of the lifecycle stages occurs in two phases: a phase that links to the component and
+                            <br>another that links to the component’s children.
+                            <br>Also Read: Exciting Angular Project Ideas
+                            <br>The Different Types of Lifecycle hook
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                <br>1. ngOnChanges –
+                            </h2>
+                            <br>This event is called every time whenever there is a change in the value of control of the input. The
+                            <br>change in the value of a property that is bound fires this event. A data map containing the changes,
+                            <br>i.e. the previous and the current value of the property within a SimpleChange.
+                            <br>Properties
+                            <br>The components having an input can use the method.
+                            <br>Whenever there is a change in the value of the input, the method gets invoked.
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                <br>2. ngOnInit
+                            </h2>
+                            <br>After the initialization of the component or the display of the properties of the bound data, the event of ngOnInit is initialized. The event is called once only after the event of ngOnChanges.
+                            <br>Therefore, the event is mainly responsible for initializing the components data.
+                            <br>Properties
+                            <br>The data in a component is initialized by this event.
+                            <br>The method is called when the values of the input are set.
+                            <br>Angular CLI has by default added this hook to all its components.
+                            <br>The method can be called only once.
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                <br>3. ngDoCheck
+                            </h2>
+                            <br>After the check on the input properties of the angular components, the triggering of the ngDoCheck event occurs. It is mainly done to detect or act upon any changes that angular fails to detect.
+                            <br>Based on the developer’s logic, the check can be implemented. Therefore, implementation of any custom change logic or algorithms for detection of change in any components is allowed by the event.
+                            <br>Properties
+                            <br>For any detection of changes angular runs this method.
+                            <br>The method is called for detecting changes.
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                <br>4. ngAfterContentInit –
+                            </h2>
+                            <br>After the projection of the external content within the view of the component, the event ngAfterContentInit is called. For checking all the component bindings for the first time, this method gets executed for the first time. Its execution follows as soon as the execution of the method ngDoCheck(). The child component is usually linked with this method.
+                            <br>Properties
+                            <br>Initially, the method is called after ngDoCheck.
+                            <br>Work is done by the content initialization.
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                <br>5. ngAfterContentChecked –
+                            </h2>
+                            <br>The projection of the external content into the component is followed by checking the projected content. The method is called every time the check in the content is made through the mechanism of change detection of angular. It is executed after the execution of the method ngAfterContentInit().
+                            <br>Also, the method is executed after the subsequent execution of ngDoCheck(). It is usually linked with the initialization of the child components.
+                            <br>Properties
+                            <br>To get started, the method waits for the completion of ngContentInit.
+                            <br>Execution is done after ngDocheck.
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                <br>6. ngAfterViewInit
+                            </h2>
+                            <br>With the initialization of the angular components and the child components, the method of ngAfterViewInit is called. After the execution of the ngAfterContentChecked method, ngAfterViewInit method is called for the first time. The method is applicable only to the components of angular.
+                            <br>Properties
+                            <br>Only once the call for the method is generated after the view of the component is initialized.
+                            <br><h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                7. ngAfterViewChecked –
+                            </h2>
+                            <br>Just after the ngAfterViewInit method, the ngAfterViewChecked method is called. Whenever the change detection method of angular does its checks over the components, the method of ngAfterViewChecked gets executed. The method is also executed after the execution of the ngAfterContentChecked(). Also,
+                            <br>when the binding of the directives of the child component is changed, the method gets executed.
+                            <br>Properties
+                            <br>The call is generated after the initialization and checking.
+                            <br>Work of the method is started after the completion of every method of ngDocheck.
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                <br>8. ngOnDestroy
+                            </h2>
+                            <br>The method is called just before the destruction of the components by angular. To avoid scenarios of memory leaks, the method is able to detach event handlers, and also useful in unsubscribing observables. Only for once, the method is called to remove the component from the DOM.
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                <br>Properties
+                            </h2>
+                            <br>The call is generated just before the removal of components from DOM.
+                            <br>Interfaces in Angular Lifecycle
+                            <br>The class of the components can be used for defining the angular lifecycle hooks methods. However, with the help of the interfaces, the methods can be called upon. The names of the interfaces are similar to that of the method names, omitting the prefix “ng”. This is because of the presence of a typescript interface with each of the methods of the lifecycle hooks. For example, the interface of ngOnInit is called OnInit. Only one event of the lifecycle hook is defined through a single interface. Further, the compiler doesn’t throw any compilation error when the interfaces are not implemented.
+
+
+                        <span class="text-code">
+                        </span>
+
+                        <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                        </h2>
+
+                        </p>
+
+                    <!-- <ul>
+                    <li><p>
+                    </p></li>
+                    </ul> -->
+
+                    </div>
+
+                    <div class="uk-margin-xlarge-top">
+                        <div class="uk-container uk-container-small">
+                            <div class="uk-grid uk-flex-between" data-uk-grid="">
+                                <div>
+                                    <ul class="uk-subnav">
+                                        <li><a
+                                                href="minimal-blogf210.html?category=ux+design">#Angular</a>
+                                        </li>
+                                        <li><a
+                                                href="minimal-blog4b9f.html?category=planing">#Life_Cycle</a>
+                                        </li>
+                                        <li><a
+                                                href="minimal-blog9a34.html?category=design+ideas">#dev</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </article>
+
+
+
+    </div>
+
+    <!-- Initiat Scripts -->
+    <script defer src="./cdn.jsdelivr.net/npm/uikit%403.6.18/dist/js/uikit.min.js"></script>
+    <script defer src="./assets/js/responsive-uk-attr.js"></script>
+    <script defer src="./cdn.jsdelivr.net/npm/jquery%403.6.0/dist/jquery.min.js"></script>
+    <script defer src="./cdn.jsdelivr.net/npm/swiper%406.5.0/swiper-bundle.min.js"></script>
+    <script defer src="./cdn.jsdelivr.net/npm/feather-icons%404.28.0/dist/feather.min.js"></script>
+    <script defer src="./cdn.jsdelivr.net/npm/typed.js%402.0.12/lib/typed.min.js"></script>
+    <script defer src="./cdn.jsdelivr.net/npm/animejs%403.2.1/lib/anime.min.js"></script>
+    <script defer src="./assets/js/app.js"></script>
+    <script defer src="./assets/js/swiper-helper.js"></script>
+    <script defer src="./assets/js/typed-helper.js"></script>
+    <script defer src="./assets/js/anime-helper.js"></script>
+    <script defer src="./assets/js/anime-helper-defined-timelines.js"></script>
+</body>
+
+<!-- Mirrored from unistudio.co/html/dannel/pages/freelancer-single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Nov 2021 06:40:03 GMT -->
+
+</html>

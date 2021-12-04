@@ -1,0 +1,11 @@
+.xp-p-fs p{
+    font-size: .8em;
+}
+/* .links-shadow a{
+    text-shadow: 1px 1px 60px  rgb(0, 0, 0);
+} */
+.text-code{
+    font-family: consolas;
+    font-size: .8rem;
+    color: rgb(2, 150, 101);
+}
